@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet" href="restaurant.css">
+    <script src="restaurant.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  />
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand" href="Homepage.html"
+    ><img src="./assets/img/logo.png" width="120px"
+  /></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="Restaurant.html">Search For Restaurant </a>
+      </li>
+    </ul>
+ 
+  </div>
+</nav>
+<div class="container-btn">
+    <div class="searchbar">
+      <div class="search">
+        <input type="text" id="searchinput" onkeyup="searchFunction()"  placeholder="Search">
+      </div>
+    </div>
+    <div class="vl"></div>
+    <div class="buttons">
+      <div class="btn-group">
+        <button class="button active" onclick="filterSelection('all')"> Show all</button>
+        <button class="button" onclick="filterSelection('Images')"> Booking available</button>
+        <button class="button" onclick="filterSelection('Audio')"> No booking</button>
+        <button class="button" onclick="filterSelection('Video')"> Prebook for party</button>
+        <button class="button" onclick="filterSelection('Icons')"> Suitable for specially abled</button>
+      </div>
+    </div>
+  </div>
+      
+  
+  <!-- Content Card -->
+  <div class="container"> 
+      
+  <a href="https://live.staticflickr.com/4032/4616626262_812e2d8db9_b.jpg" target="_blank">
+    <div class="item filterDiv Images">
+      <div class="content">
+        <div class="imgframe"><img src="https://seeklogo.com/images/B/barbeque-nation-logo-D7C74DCC19-seeklogo.com.png"></div>
+        <div class="titlediv"><span class="title">Barbeque Nation</span></div>
+        <p> Birthday Celebrations and unlimited food.Staircase to the restaurant(-specially abled)</p>
+        </br>
+        <div class="tag"><span class="type">Booking available</span></div>
+      </div>
+    </div>
+    </a> 
+      
+  <a href="https://live.staticflickr.com/4032/4616626262_812e2d8db9_b.jpg" target="_blank">
+    <div class="item filterDiv Images, Icons">
+      <div class="content">
+        <div class="imgframe"><img src="https://thumbs.dreamstime.com/b/cafe-logo-use-natural-coffee-abstract-cup-as-icon-which-used-cafes-restaurants-other-illustrations-suitable-food-115186107.jpg"alt="Flora cafe"></div>
+        <div class="titlediv"><span class="title">Flora Cafe</span></div>
+        <p>Amazing restaurant for girls and family. Birthday Celebration.</p>
+        </br>
+        <div class="tag"><span class="type">Booking available</span><span class="type">SSA</span></div>
+      </div>
+    </div>
+    </a> 
+      
+      
+  <a href="https://graphicburger.com/" target="_blank">
+    <div class="item filterDiv Images">
+      <div class="content">
+        <div class="imgframe"><img src="https://pbs.twimg.com/profile_images/903913611948683264/f7V3YfQd_400x400.jpg"alt="GraphicBurger"></div>
+        <div class="titlediv"><span class="title">Earthplate</span></div>
+        <p>Family. Fine dining.Staircase to the restaurant.(-specially abled) </p>
+        </br>
+        <div class="tag"><span class="type">Booking </span></div>
+      </div>
+    </div>
+  </a> 
+      
+  <a href="https://iconmonstr.com/" target="_blank">
+    <div class="item filterDiv Icons">
+      <div class="content">
+        <div class="imgframe"><img src="https://marketplace.canva.com/EAEqFBj7N9M/1/0/1600w/canva-brown-minimalist-simple-coffee-shop-logo-PcWa9uY8De4.jpg"alt="iconmonstr"></div>
+        <div class="titlediv"><span class="title">ALOKA hotel cafe</span></div>
+        <p>Family and friends. Party. Lounge. Lunch discount. </p>
+        </br>
+        <div class="tag"><span class="type">SSA</span></div>
+      </div>
+    </div>
+    </a> 
+    <a href="https://iconmonstr.com/" target="_blank">
+      <div class="item filterDiv Icons">
+        <div class="content">
+          <div class="imgframe"><img src="https://img.freepik.com/premium-vector/cup-coffee-coffee-shop-logo-vector-illustration-design-cafe-logo-design-badge-logo-coffee-store_531581-412.jpg?w=2000"alt="iconmonstr"></div>
+          <div class="titlediv"><span class="title">Lakhan cafe</span></div>
+          <p>Family and friends restauarant. No smoking. Dinner discount. </p>
+          </br>
+          <div class="tag"><span class="type">SSA</span></div>
+        </div>
+      </div>
+      </a> 
+      <a href="https://iconmonstr.com/" target="_blank">
+        <div class="item filterDiv Icons">
+          <div class="content">
+            <div class="imgframe"><img src="https://thumbs.dreamstime.com/b/simple-street-food-logo-badge-template-famous-shop-vector-label-design-inspiration-simple-street-food-logo-badge-template-194507332.jpg"alt="iconmonstr"></div>
+            <div class="titlediv"><span class="title">Sruthi Papdi Point</span></div>
+            <p>Friends hangout. Family dinner available. Lunch discount. </p>
+            </br>
+            <div class="tag"><span class="type">SSA</span></div>
+          </div>
+        </div>
+        </a> 
+  
+        <a href="https://lifeofvids.com/" target="_blank">
+          <div class="item filterDiv Video">
+            <div class="content">
+              <div class="imgframe"><img src="https://www.footagesecrets.com/wp-content/uploads/2018/07/life-of-vids-logo.jpg"alt="Life of Vids"></div>
+              <div class="titlediv"><span class="title">Venkatesh restro and bar</span></div>
+              <p>Friends, lounge and bar. Booking available. First visit discount. </p>
+              </br>
+              <div class="tag"><span class="type">Prebook for party</span></div>
+            </div>
+          </div>
+          </a> 
+
+
+    <a href="https://lifeofvids.com/" target="_blank">
+      <div class="item filterDiv Video">
+        <div class="content">
+          <div class="imgframe"><img src="https://pbs.twimg.com/profile_images/1481689654306885634/50MiTlvP_400x400.jpg"alt="Life of Vids"></div>
+          <div class="titlediv"><span class="title">100s Heritage</span></div>
+          <p>    Fun place for family, friends and special someone. Fine dine. Famous for Italian. </p>
+          </br>
+          <div class="tag"><span class="type">Prebook for party</span></div>
+        </div>
+      </div>
+      </a> 
+      <a href="https://lifeofvids.com/" target="_blank">
+        <div class="item filterDiv Video">
+          <div class="content">
+            <div class="imgframe"><img src="https://www.indiablooms.com/life_pic/2022/1038afb937a41ebec6634b2ca78ca164.JPG"alt="Life of Vids"></div>
+            <div class="titlediv"><span class="title">Warehouse cafe</span></div>
+            <p>Bringing India's best lounge and bar in the city of Vellore. First visit discount. Indian and Italian food.</p>
+            </br>
+            <div class="tag"><span class="type">Prebook for party</span></div>
+          </div>
+        </div>
+        </a> 
+  
+  <a href="https://www.lifeofpix.com/" target="_blank">
+    <div class="item filterDiv Images">
+      <div class="content">
+        <div class="imgframe"><img src="https://www.lifeofpix.com/wp-content/themes/lifeofpix_v2/img/lop-logo-vert.svg"alt="Life of Pix"></div>
+        <div class="titlediv"><span class="title">Shagun cafe</span></div>
+      
+        <p>Friends and family cafe. Lunch hour rush discount. Birthday</p>
+        </br>
+        <div class="tag"><span class="type"> Booking available</span></div>
+      </div>
+    </div>
+    </a> 
+  
+  <a href="https://www.youtube.com/audiolibrary/music?nv=1" target="_blank">
+    <div class="item filterDiv Audio">
+      <div class="content">
+        <div class="imgframe"><img src="https://image.shutterstock.com/image-vector/vintage-logo-restaurant-food-drink-260nw-1431394568.jpg"alt="YouTube Audio Library"></div>
+        <div class="titlediv"><span class="title">Wendys</span></div>
+        <p>Popular Western cafe. Chinese and Italian. Friends and Family. </p>
+        
+        <div class="tag"><span class="type">No booking</span></div>
+      </div>
+    </div>
+    </a> 
+      
+ </div>
+
+      
+  
+  
+  
+</body>
+</html>
+  
+  
+  
